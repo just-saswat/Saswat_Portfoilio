@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-color: #0f1016;
+    color: #ffffff;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    background-color: #1f1f1f;
+    font-size: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%; 
+    text-decoration: none; 
+    transition: all 0.3s;
+}
+
+
+.nav-link .fa {
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+
+.nav-link span {
+    display: none;
+    margin-left: 10px;
+    font-size: 0;
+    transition: font-size 0.3s;
+}
+
+.content {
+    margin-left: 5%;
+    padding: 2rem;
+    transition: margin-left 0.3s;
+}
+.intro {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.intro-text {
+    flex: 1;
+    font-size: 2.5em;
+}
+
+.intro-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-photo img {
+    max-width: 70vh;
+    height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #5eed6f);
+    filter: drop-shadow(5px 5px 35px #5eed6f);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#changing-text-container {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    
+}
+#changing-text {
+    display: inline-block;
+    font-size: 1.2em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    transition: width 1s, color 1s;
+}
+
+@keyframes slideOut {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 0px var(--clr);
+    }
+    to {
+        text-shadow: 0 0 10px var(--clr), 0 0 0px var(--clr);
+    }
+}
+
+.glow {
+    animation: glow 6s ease-in-out infinite alternate;
+}
+
