@@ -1,12 +1,12 @@
 const texts = [
-    { text: 'Web Developer', color: '#00ade1' },
-    { text: 'Software Developer', color: '#ff6492' },
-    { text: 'Entrepreneur', color: '#ffdd1c' },
-    { text: 'YouTuber', color: '#00dc82' },
-    { text: 'Hobbyist', color: '#dc00d4' },
-    { text: 'Video Editor', color: '#00ade1' },
-    { text: 'Photo Editor', color: '#ffdd1c' },
-    { text: 'Content Creator', color: '#ff6492' }
+    { text: 'Web Developer', color: '#D4ADFC' },
+    { text: 'Software Developer', color: '#D4ADFC' },
+    { text: 'Entrepreneur', color: '#D4ADFC' },
+    { text: 'YouTuber', color: '#D4ADFC' },
+    { text: 'Hobbyist', color: '#D4ADFC' },
+    { text: 'Video Editor', color: '#D4ADFC' },
+    { text: 'Photo Editor', color: '#D4ADFC' },
+    { text: 'Content Creator', color: '#D4ADFC' }
 ];
 
 let count = 0;
