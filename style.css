@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: "Ysabeau SC", sans-serif;
     background-color: #070F2B;
     color: #ffffff;
     padding: 0;
@@ -9,6 +9,10 @@ body {
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
+}
+
+#nav2{
+    display: none;
 }
 
 .navbar {
@@ -154,3 +158,99 @@ body {
 /*
    Media Queries for Responsiveness
 */
+
+@media (max-width: 480px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .navbar{
+        display: none;
+    }
+    .h1{
+        font-size: 40px;
+    }
+    #intro1{
+        font-size: 4vh;
+        margin-top: 45vh;
+        margin-left: -16%;
+        min-width: 200px;
+    }
+    #intro2{
+        font-size: 4vh;
+        margin-left: -15%;
+        margin-top: 3vh;
+        min-width: 200px;
+    }
+    .intro-photo{
+        margin-top: -70%;
+    }
+
+    /*
+        NavBar Styles
+    */
+    #nav2{
+        display: block;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .navbar-mobile .navbar-toggler {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .navbar-mobile .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .navbar-mobile .navbar-toggler-icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: transform 0.3s;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -80px;
+        width: 80px;
+        height: 100%;
+        background-color: #1f1f1f;
+        padding-top: 1rem;
+        z-index: 1;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+        left: 0;
+    }
+
+    .mobile-menu .nav-link {
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-link:hover {
+        color: #b974fd;
+    }
+}
