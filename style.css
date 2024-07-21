@@ -3,6 +3,12 @@ body {
     font-family: 'Mochiy Pop One', sans-serif;
     background-color: #070F2B;
     color: #ffffff;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -34,7 +40,7 @@ body {
     padding: 1rem;
     width: 100%; 
     text-decoration: none; 
-    transition: all 0.3s;
+    transition: all 1.3s;
 }
 
 
@@ -47,7 +53,7 @@ body {
 .nav-link:hover{
     .fas,.fab{
         transition: transform 0.3s;
-        color: #D4ADFC;
+        color: #b974fd;
     }
 }
 
@@ -81,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 .blob{
     position: absolute;
@@ -144,3 +150,7 @@ body {
     animation: glow 6s ease-in-out infinite alternate;
 }
 
+
+/*
+   Media Queries for Responsiveness
+*/
