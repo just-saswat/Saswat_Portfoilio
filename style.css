@@ -17,6 +17,8 @@ body {
 }
 #intro2{
     font-size: 7vh;
+    margin-top: 25vh;
+    margin-left: -65vh;
 }
 
 /*
@@ -114,10 +116,12 @@ body {
 
 .intro-photo {
     flex: 1;
-    display: flex;
+    display: fixed;
     justify-content: center;
     align-items: center;
     height: 80vh;
+    margin-left: 80vh;
+    margin-top: -5%;
 }
 .blob{
     position: absolute;
@@ -205,7 +209,9 @@ body {
         min-width: 200px;
     }
     .intro-photo{
-        margin-top: -70%;
+        margin-top: -65%;
+        margin-left: -10%;
+        z-index: -1;
     }
 
     /*

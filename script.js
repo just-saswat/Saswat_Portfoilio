@@ -1,12 +1,13 @@
 const texts = [
     { text: 'Web Developer', color: '#b974fd' },
     { text: 'Software Developer', color: '#b974fd' },
+    { text: 'Frontend Developer', color: '#b974fd' },
     { text: 'Entrepreneur', color: '#b974fd' },
     { text: 'YouTuber', color: '#b974fd' },
     { text: 'Hobbyist', color: '#b974fd' },
     { text: 'Video Editor', color: '#b974fd' },
     { text: 'Photo Editor', color: '#b974fd' },
-    { text: 'Content Creator', color: '#b974fd' }
+    { text: 'UI/UX Designer', color: '#b974fd' }
 ];
 
 let count = 0;
