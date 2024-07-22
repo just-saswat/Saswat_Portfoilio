@@ -74,21 +74,26 @@ body {
         color: #b874fd00;
     }
     span{
-        transition-delay: 0.3s;
+        opacity: 1;
         display: block;
     }
 }
 
 
 .nav-link span {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth transition for opacity and margin-left */
     margin-left: 10px;
     font-family: "Kanit", sans-serif;
     font-weight: 650;
     font-size: 2.2vh;
     color: #bb7ef7;
-    z-index: 2;
+    position: absolute; /* Position it for better animation */
 }
+
+/*
+    Content Part
+*/
 
 .content {
     margin-left: 5%;
