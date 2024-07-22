@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    font-family: "Outfit", sans-serif;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #070F2B;
     color: #ffffff;
     padding: 0;
@@ -37,7 +39,7 @@ body {
 .navbar-nav {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 2.2rem;
 }
 
 .nav-link {
@@ -52,6 +54,12 @@ body {
     transition: all 0.3s;
 }
 
+.nav-text{
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 400;
+}
 
 .nav-link .fa {
     font-size: 24px;
@@ -70,7 +78,7 @@ body {
 .nav-link span {
     display: none;
     margin-left: 10px;
-    font-size: 0;
+    font-size: 1vh;
     transition: font-size 0.3s;
 }
 
