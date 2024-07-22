@@ -1,0 +1,162 @@
+.containerContact {
+    max-width: 72vh;
+    height: fit-content;
+    margin: 1% auto;
+    padding: 4.5%;
+    margin-left: -10%;
+    font-weight: 300;
+    backdrop-filter: blur(10px);
+    background-color: rgba(180, 179, 179, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contactHeading{
+    font-size: 2.5em;
+    text-align: center;
+    background-image: linear-gradient(45deg, #d36efb, rgb(151, 153, 247));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.btn-custom {
+    background-image: linear-gradient(217deg,#d36efb,rgb(113, 115, 255));
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #000000;
+    transition: 0.5s;
+}
+
+.btn-custom:hover {
+    background-image: linear-gradient(-217deg,#d36efb,rgb(113, 115, 255));
+    opacity: 1;
+}
+
+.modal-custom .modal-content {
+    background-color: #030504d4;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-custom .modal-header, .modal-custom .modal-footer {
+    border: none;
+}
+
+.modal-custom .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-custom .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-custom .close {
+    color: #fff;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .containerContact {
+        margin: 10% 5%;
+        padding: 15px;
+    }
+
+    .containerContact h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .containerContact {
+        margin: 15% 3%;
+        padding: 10px;
+    }
+
+    .containerContact h2 {
+        font-size: 2em;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-custom {
+        font-size: 14px;
+    }
+}
+
+.spinner-border-custom {
+    color: #D4ADFC;
+}
+
+.loading-text {
+    color: #fff;
+}
+
+.modal-loading .modal-content {
+    background-color: #000000bc; /* Mirror black background */
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-loading .modal-body {
+    padding: 20px;
+}
+
+.modal-loading .modal-body .loading-text {
+    margin-top: 10px;
+}
+
+@media (max-width: 480px){
+    .containerContact{
+        min-width: 55vh;
+        height: fit-content;
+        z-index: 3;
+        margin-left: -27%;
+        align-items: center;
+    }
+    .contactHeading{
+        margin-top: 40%;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+    .intro-photo{
+        margin-left: -90% !important;
+        margin-top: 30%;
+    }
+    .intro-photo img{
+        display: none;
+    } 
+}

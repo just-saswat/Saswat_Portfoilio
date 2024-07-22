@@ -4,190 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saswat Pradhan - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleContactMe.css">
 </head>
-<style>
-    .containerContact {
-            max-width: 74vh;
-            max-height: 78vh;
-            margin: 1% auto;
-            padding: 4.5%;
-            margin-left: -10%;
-            backdrop-filter: blur(10px);
-            background-color: rgba(180, 179, 179, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .form-control {
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            color: #fff;
-        }
-
-        .form-control:focus {
-            background: rgba(255, 255, 255, 0.3);
-            border: none;
-            box-shadow: none;
-        }
-
-        .form-control::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .contactHeading{
-            font-size: 2.5em;
-            text-align: center;
-            background-image: linear-gradient(45deg, #d36efb, rgb(151, 153, 247));
-            background-size: 100%;
-            background-repeat: repeat;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
-        }
-
-        .btn-custom {
-            background-image: linear-gradient(217deg,#d36efb,rgb(113, 115, 255));
-            border: none;
-            color: #fff;
-            font-weight: bold;
-            text-shadow: 3px 3px 5px #000000;
-            transition: 0.5s;
-        }
-
-        .btn-custom:hover {
-            background-image: linear-gradient(-217deg,#d36efb,rgb(113, 115, 255));
-            opacity: 1;
-        }
-
-        .modal-custom .modal-content {
-            background-color: #030504d4;
-            color: #fff;
-            border-radius: 10px;
-            border: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .modal-custom .modal-header, .modal-custom .modal-footer {
-            border: none;
-        }
-
-        .modal-custom .modal-header {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .modal-custom .modal-footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .modal-custom .close {
-            color: #fff;
-            opacity: 1;
-        }
-
-        @media (max-width: 768px) {
-            .containerContact {
-                margin: 10% 5%;
-                padding: 15px;
-            }
-
-            .containerContact h2 {
-                font-size: 2.5em;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .containerContact {
-                margin: 15% 3%;
-                padding: 10px;
-            }
-
-            .containerContact h2 {
-                font-size: 2em;
-            }
-
-            .form-control {
-                font-size: 14px;
-            }
-
-            .btn-custom {
-                font-size: 14px;
-            }
-        }
-
-        .spinner-border-custom {
-            color: #D4ADFC;
-        }
-
-        .loading-text {
-            color: #fff;
-        }
-
-        .modal-loading .modal-content {
-            background-color: #000000bc; /* Mirror black background */
-            color: #fff;
-            border-radius: 10px;
-            border: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .modal-loading .modal-body {
-            padding: 20px;
-        }
-
-        .modal-loading .modal-body .loading-text {
-            margin-top: 10px;
-        }
-</style>
 <body>
+    <!-- Desktop View NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="navbar-nav flex-column">
             <a class="nav-link d-flex align-items-center" href="index.html">
                 <i class="fas fa-home"></i>
-                <span class="nav-text">Home</span>
+                <span class="nav-text" style="margin-left: 0%;">HOME</span>
             </a>
             <a class="nav-link d-flex align-items-center" href="#about">
                 <i class="fas fa-user"></i>
-                <span class="nav-text">About</span>
+                <span class="nav-text" style="margin-left: 0%;">ABOUT</span>
             </a>
             <a class="nav-link d-flex align-items-center" href="#skills">
                 <i class="fas fa-tools"></i>
-                <span class="nav-text">Skills</span>
+                <span class="nav-text" style="margin-left: 0%;">SKILLS</span>
             </a>
             <a class="nav-link d-flex align-items-center" href="#work">
                 <i class="fas fa-briefcase"></i>
-                <span class="nav-text">Work</span>
+                <span class="nav-text" style="margin-left: 0%;">WORK</span>
             </a>
             <a class="nav-link d-flex align-items-center" href="contact_me.html">
                 <i class="fas fa-envelope"></i>
-                <span class="nav-text">Contact</span>
+                <span class="nav-text" style="margin-left: 0%;">CONTACT</span>
             </a>
-            <a class="nav-link d-flex align-items-center" href="#discord">
-                <i class="fab fa-discord"></i>
-                <span class="nav-text">Discord</span>
-            </a>
-            <a class="nav-link d-flex align-items-center" href="#linkedin">
+            <a class="nav-link d-flex align-items-center" href="https://www.linkedin.com/in/saswat-pradhan-a54240245/">
                 <i class="fab fa-linkedin"></i>
-                <span class="nav-text">LinkedIn</span>
+                <span class="nav-text" style="margin-left: 0%;">LINKEDIN</span>
             </a>
-            <a class="nav-link d-flex align-items-center" href="#github">
+            <a class="nav-link d-flex align-items-center" href="https://github.com/organic-veedu">
                 <i class="fab fa-github"></i>
-                <span class="nav-text">GitHub</span>
-            </a>
-            <a class="nav-link d-flex align-items-center" href="#instagram">
-                <i class="fab fa-instagram"></i>
-                <span class="nav-text">Instagram</span>
-            </a>
-            <a class="nav-link d-flex align-items-center" href="#twitter">
-                <i class="fab fa-twitter"></i>
-                <span class="nav-text">Twitter</span>
+                <span class="nav-text" style="margin-left: 0%;">GITHUB</span>
             </a>
         </div>
     </nav>
+
+    <!-- Mobile View NavBar -->
+    <div id="nav2" style="z-index: 6;">
+        <div class="navbar-mobile">
+            <button class="navbar-toggler" type="button" id="navbar-toggler" style="z-index: 5;">
+                <i class="fas fa-bars navbar-toggler-icon" style="border: 1px solid white; border-radius: 5px; padding-top: 5px;"></i>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>
+                <span class="nav-text" style="margin-left: -5%;">Home</span>
+            </a>
+            <a class="nav-link" href="#about">
+                <i class="fas fa-user"></i>
+                <span class="nav-text" style="margin-left: -5%;">About</span>
+            </a>
+            <a class="nav-link" href="#skills">
+                <i class="fas fa-tools"></i>
+                <span class="nav-text" style="margin-left: -5%;">Skills</span>
+            </a>
+            <a class="nav-link" href="#work">
+                <i class="fas fa-briefcase"></i>
+                <span class="nav-text" style="margin-left: -5%;">Work</span>
+            </a>
+            <a class="nav-link" href="contact_me.html">
+                <i class="fas fa-envelope"></i>
+                <span class="nav-text" style="margin-left: 10%;">Contact</span>
+            </a>
+            <a class="nav-link" href="https://www.linkedin.com/in/saswat-pradhan-a54240245/">
+                <i class="fab fa-linkedin"></i>
+                <span class="nav-text" style="margin-left: 15%;">LinkedIn</span>
+            </a>
+            <a class="nav-link" href="https://github.com/organic-veedu">
+                <i class="fab fa-github"></i>
+                <span class="nav-text">GitHub</span>
+            </a>
+        </div>
+    
+    </div>
+
+    <!-- Main Content of the Page -->
     <div class="content">
         <main>
             <section id="home" class="intro">
@@ -212,11 +113,13 @@
                                 <textarea class="form-control" id="message" name="message" rows="4" placeholder="Describe your request" style="color: white;"></textarea>
                             </div>
                             <button type="submit" value="Submit" class="btn btn-custom btn-block" style="color: #fff;">Submit</button>
+                            <p></p>
+                            <p style="height: 10px;"></p>
                         </form>
                     </div>         
                 </div>
-                <div class="intro-photo">
-                    <div class="blob">
+                <div class="intro-photo" style="margin-left: 20vh;">
+                    <div class="blob" style="margin-left: -5%;">
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <defs>
                                 <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -238,7 +141,7 @@
                             </path>
                         </svg>
                     </div>
-                    <img src="contact-us-animate.svg">
+                    <img src="contact-us-animate.svg" style="height: 500px; margin-left: -5%; margin-top: 10%;">
                 </div>
             </section>
         </main>
@@ -278,6 +181,18 @@
         </div>
     </div>
 
+
+    <!-- Button Function For Toggling NavBar -->
+    <script>
+        document.getElementById('navbar-toggler').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+            this.querySelector('.navbar-toggler-icon').classList.toggle('fa-bars');
+            this.querySelector('.navbar-toggler-icon').classList.toggle('fa-times');
+        });
+    </script>
+
+    <!-- Submit Button Function -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
@@ -312,6 +227,7 @@
         });
     </script>
 
+    <!-- Script For Disabling to view the Source Code -->
     <script>
         // Disable right-click
         document.addEventListener('contextmenu', function(e) {
