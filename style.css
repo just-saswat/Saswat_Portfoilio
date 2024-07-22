@@ -214,6 +214,19 @@ body {
     #nav2{
         display: block;
     }
+    .nav-link{
+        padding-top: 12.5%;
+        padding-bottom: 12.5%;
+    }
+    .nav-link i{
+        margin-left: -80%;
+    }
+    .nav-link span {
+        opacity: 1;
+        color: #ffffff;
+        font-family: "Kanit", sans-serif;
+        font-size: 1.3em;
+    }
     .nav-link:hover{
         .fas,.fab{
             transition: transform 0.3s;
@@ -274,9 +287,5 @@ body {
 
     .mobile-menu .nav-link:hover {
         background-color: #a24afb;
-    }
-    .mobile-menu .nav-text {
-        font-size: 1.3rem;
-        display: block;
     }
 }
