@@ -18,6 +18,10 @@ body {
 #intro2{
     font-size: 7vh;
 }
+
+/*
+    Navbar Styles in Desktop Mode
+*/
 #nav2{
     display: none;
 }
@@ -51,7 +55,6 @@ body {
     padding: 1rem;
     width: 100%; 
     text-decoration: none; 
-    transition: all 0.3s;
 }
 
 .nav-text{
@@ -63,14 +66,16 @@ body {
 
 .nav-link .fa {
     font-size: 24px;
-    transition: transform 0.3s;
 }
 
 
 .nav-link:hover{
     .fas,.fab{
-        transition: transform 0.3s;
-        color: #b974fd;
+        color: #b874fd00;
+    }
+    span{
+        transition-delay: 0.3s;
+        display: block;
     }
 }
 
@@ -78,8 +83,11 @@ body {
 .nav-link span {
     display: none;
     margin-left: 10px;
-    font-size: 1vh;
-    transition: font-size 0.3s;
+    font-family: "Kanit", sans-serif;
+    font-weight: 650;
+    font-size: 2.2vh;
+    color: #bb7ef7;
+    z-index: 2;
 }
 
 .content {
@@ -112,20 +120,11 @@ body {
     height: 85vh;
     z-index: -1;
 }
-.intro-photo img {
-    max-width: 70vh;
-    height: auto;
-    animation: float 10s ease-in-out infinite;
-}
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
+
+/*
+    Changing Text
+*/
 
 #changing-text-container {
     display: inline-flex;
