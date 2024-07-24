@@ -1,0 +1,184 @@
+@media (max-width: 599px) {
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #nav1{
+        display: none;
+    }
+    .nav2{
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        flex: 1;
+        height: 220vw;
+    }
+    .intro-photo{
+        height: 80vh;
+    }
+    .blob{
+        width: 130vw;
+        position: absolute;
+        z-index: -1;
+    }
+    .intro-text h1{
+        font-size: 7vw; 
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .intro-text{
+        /* align-self: center; */
+        position: static;
+        padding-top: 10vh;  
+    }
+
+
+    /* Nav Bar Styles */
+    .nav-link{
+        padding-top: 12.5%;
+        padding-bottom: 12.5%;
+    }
+    .nav-link i{
+        margin-left: -80%;
+    }
+    .nav-link span {
+        opacity: 1;
+        color: #ffffff;
+        font-family: "Fugaz One", sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .nav-link:hover{
+        .fas,.fab{
+            transition: transform 0.3s;
+            color: #ffffff;
+        }
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-mobile .navbar-toggler {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .navbar-mobile .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .navbar-mobile .navbar-toggler-icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: transform 0.3s;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -80px;
+        width: 180px;
+        height: 100%;
+        background-color: #070F2B;
+        z-index: 1;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+        left: 0%;
+        align-items: stretch;
+    }
+
+    .mobile-menu .nav-link {
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+
+    .mobile-menu .nav-link:hover {
+        background-color: #a24afb;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        flex: 1;
+        height: 220vw;
+    }
+    .intro-photo{
+        height: 80vh;
+        /* border: 2px solid red; */
+    }
+    .blob{
+        width: 110vw;
+        position: absolute;
+        z-index: -1;
+    }
+    .intro-text h1{
+        font-size: 6vw; 
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .intro-text{
+        /* align-self: center; */
+        position: static;
+        padding-top: 10vh;  
+        /* border: 2px solid green; */
+        align-self: start;
+        margin-left: 12vw;
+    }
+
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px){
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        flex: 1;
+        height: 220vw;
+    }
+    .intro-photo{
+        height: 80vh;
+    }
+    .blob{
+        width: 130vw;
+        position: absolute;
+        z-index: -1;
+    }
+    .intro-text h1{
+        font-size: 7vw; 
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .intro-text{
+        /* align-self: center; */
+        position: static;
+        padding-top: 10vh;  
+    }
+
+  }

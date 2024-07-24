@@ -11,10 +11,11 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveIndex.css">
 </head>
 <body>
     <!-- Desktop View NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav1">
         <div class="navbar-nav flex-column">
             <a class="nav-link d-flex align-items-center" href="index.html">
                 <i class="fas fa-home"></i>
@@ -51,10 +52,10 @@
     <div id="nav2">
         <div class="navbar-mobile">
             <button class="navbar-toggler" type="button" id="navbar-toggler">
-                <i class="fas fa-bars navbar-toggler-icon" style="border: 1px solid white; border-radius: 5px; padding-top: 5px;"></i>
+                <i class="fas fa-bars navbar-toggler-icon"></i>
             </button>
         </div>
-        <div class="mobile-menu" id="mobile-menu" style="z-index: 3;">
+        <div class="mobile-menu" id="mobile-menu">
             <a class="nav-link" href="index.html">
                 <i class="fas fa-home"></i>
                 <span class="nav-text" style="margin-left: -5%;">Home</span>
@@ -92,21 +93,14 @@
         <main>
             <section id="home" class="intro">
                 <div class="intro-text">
-                    <div class="row">
-                        <div class="row">
-                            <h1 id="intro1">Hiii<br>I'm <t style="color: #b974fd;">S</t>aswat <t style="color: #b974fd;">P</t>radhan<br>and I'm a</h1><br>
-                        </div>
-                        <div class="row">
-                            <h1 id="intro2">
-                                <span id="changing-text-container">
-                                    <span id="changing-text"></span>
-                                    <span id="cursor">|</span>
-                                </span>
-                            </h1>
-                        </div>
-                    </div>           
+                        <h1 id="intro1">Hiii<br>I'm <t style="color: #b974fd;">S</t>aswat <t style="color: #b974fd;">P</t>radhan<br>and I'm a <br>
+                            <span id="changing-text-container">
+                                <span id="changing-text"></span>
+                                <span id="cursor">|</span>
+                            </span>
+                        </h1>        
                 </div>
-                <div class="intro-photo" style="position: fixed;">
+                <div class="intro-photo">
                     <div class="blob">
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <defs>
@@ -143,7 +137,7 @@
                                 </animate>
                             </path>
                             <!-- Image inside the blob with mask -->
-                            <image xlink:href="ppf.png" mask="url(#blobMask)" width="400" height="500" x='50' y='80' preserveAspectRatio="xMidYMid slice" style="padding-left: 200px;"/>
+                            <image xlink:href="ppf.png" mask="url(#blobMask)" width="400" height="500" x='50' y='80' preserveAspectRatio="xMidYMid slice"/>
                         </svg>
                     </div>
                 </div>

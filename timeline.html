@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Timeline</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ddd;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item::before {
+  content: attr(data-year);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.timeline-content {
+  position: relative;
+  padding: 20px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: 50px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+  }
+  .timeline-item::before {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-right: 0;
+    margin-left: 50px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="timeline">
+      <div class="timeline-item" data-year="2020">
+        <div class="timeline-content">
+          <h3>Event Title 2020</h3>
+          <p>Description for event 2020.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-year="2021">
+        <div class="timeline-content">
+          <h3>Event Title 2021</h3>
+          <p>Description for event 2021.</p>
+        </div>
+      </div>
+      <!-- Add more timeline items here -->
+    </div>
+  </div>
+  <script>
+    // script.js
+        $(document).ready(function() {
+        $('.timeline-item').on('click', function() {
+            $(this).find('.timeline-content').slideToggle();
+        });
+        });
+  </script>
+</body>
+</html>
