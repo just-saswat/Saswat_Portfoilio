@@ -1,9 +1,13 @@
+/*
+
+In this file css for the contact card only has been defined
+
+*/
+
 .containerContact {
-    max-width: 72vh;
-    height: fit-content;
+    max-width: 35vw;
     margin: 1% auto;
-    padding: 4.5%;
-    font-weight: 300;
+    padding: 20px;
     backdrop-filter: blur(10px);
     background-color: rgba(180, 179, 179, 0.1);
     border-radius: 10px;
@@ -26,8 +30,21 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.contactHeading{
-    font-size: 2.5em;
+.btn-custom {
+    background-color: #b760ff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #942aea;
+}
+
+.containerContact h2 {
+    font-size: 3.5em;
+    animation: none;
     text-align: center;
     background-image: linear-gradient(45deg, #d36efb, rgb(151, 153, 247));
     background-size: 100%;
@@ -36,20 +53,6 @@
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-}
-
-.btn-custom {
-    background-image: linear-gradient(217deg,#d36efb,rgb(113, 115, 255));
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 3px 3px 5px #000000;
-    transition: 0.5s;
-}
-
-.btn-custom:hover {
-    background-image: linear-gradient(-217deg,#d36efb,rgb(113, 115, 255));
-    opacity: 1;
 }
 
 .modal-custom .modal-content {
@@ -77,8 +80,38 @@
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .containerContact {
+        margin: 10% 5%;
+        padding: 15px;
+    }
+
+    .containerContact h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .containerContact {
+        margin: 15% 3%;
+        padding: 10px;
+    }
+
+    .containerContact h2 {
+        font-size: 2em;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-custom {
+        font-size: 14px;
+    }
+}
+
 .spinner-border-custom {
-    color: #D4ADFC;
+    color: #b760ff;
 }
 
 .loading-text {
