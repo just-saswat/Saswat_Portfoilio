@@ -6,6 +6,7 @@ In this file css for the contact card only has been defined
 
 .containerContact {
     max-width: 35vw;
+    min-width: max-content;
     margin: 1% auto;
     padding: 20px;
     backdrop-filter: blur(10px);
@@ -82,7 +83,6 @@ In this file css for the contact card only has been defined
 
 @media (max-width: 768px) {
     .containerContact {
-        margin: 10% 5%;
         padding: 15px;
     }
 
@@ -93,7 +93,6 @@ In this file css for the contact card only has been defined
 
 @media (max-width: 576px) {
     .containerContact {
-        margin: 15% 3%;
         padding: 10px;
     }
 

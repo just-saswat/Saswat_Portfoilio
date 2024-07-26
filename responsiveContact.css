@@ -13,33 +13,38 @@
         z-index: 5;
     }
     .intro{
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
         flex: 1;
-        height: 220vw;
-    }
-    .intro-photo{
-        height: 80vh;
-    }
-    .intro-photo img{
-        display: none;
-    }
-    .blob{
-        width: 100vw;
-        z-index: -1;
-        margin-top: -80vh;
-        padding-left: 10vh;
-        position: fixed;
+        align-items: center;
     }
     .intro-text{
+        /* align-self: center; */
+        position: static;
+        /* border: 2px solid green; */
+        align-self: start;
+        margin-left: -0vw;
+        margin-top: -5vh;
+        z-index: 0;
+    }
+    .blob{
+        width: 70vw;
+        position: static;
+        z-index: -1;
+        margin-left: -0% !important;
+    }
+    .intro-photo img{
+        position: static;
+        width: 60vw !important;
+        height: auto !important;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
+    }
+    .intro-text{
+        align-self: center;
         position: static;
         padding-top: 10vh;  
-        align-self: start;
-        z-index: 0;   
-        /* border: 1px solid seagreen; */
-    }
-    .intro-text .containerContact{
-        min-width: 70vw;
-        margin-top: -10vw;
+        z-index: 0;
     }
 
 
@@ -119,6 +124,10 @@
     .mobile-menu .nav-link:hover {
         background-color: #a24afb;
     }
+    .containerContact{
+        max-width: 100vw !important;
+        min-width: 80vw !important;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -128,34 +137,40 @@
         overflow-x: hidden;
     }
     .intro{
-        flex-direction: column;
-        flex: 3;
-        /* border: 1px solid greenyellow; */
+        flex-direction: column-reverse;
+        flex: 1;
+        /* border: 1px solid violet; */
     }
-    .intro-photo{
-        height: 65vh;
-    }
-    .intro-photo img{
-        display: none;
+    .intro-text{
+        /* align-self: center; */
+        position: static;
+        /* border: 2px solid green; */
+        align-self: start;
+        /* margin-left: 10vw; */
+        margin-top: -5vh;
+        z-index: 0;
     }
     .blob{
         width: 70vw;
-        position: fixed;
+        position: static;
         z-index: -1;
-        margin-top: -70vw;
-        left: 70vw !important;
+        margin-left: 7% !important;
+    }
+    .intro-photo img{
+        position: static;
+        width: 60vw;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
     }
     .intro-text{
         align-self: center;
         position: static;
         padding-top: 10vh;  
-        flex-grow: 5;
         z-index: 0;
-        /* border: 1px solid red; */
-        width: 80vw;
     }
-    .intro-text .containerContact{
-        max-width: 80vw;
+    .containerContact{
+        max-width: 60vw !important;
+        min-width: 50vw !important;
     }
 
   }
@@ -167,34 +182,33 @@
         overflow-x: hidden;
     }
     .intro{
-        flex-direction: column;
-        flex: 3;
-        /* border: 1px solid greenyellow; */
+        flex-direction: column-reverse;
+        flex: 1;
     }
     .intro-photo{
-        height: 65vh;
-    }
-    .intro-photo img{
-        display: none;
+        align-self: center;
     }
     .blob{
         width: 70vw;
-        position: fixed;
+        position: static;
         z-index: -1;
-        margin-top: -70vw;
-        left: 70vw !important;
+        margin-left: 7% !important;
+    }
+    .intro-photo img{
+        position: static;
+        width: 60vw;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
     }
     .intro-text{
         align-self: center;
         position: static;
         padding-top: 10vh;  
-        flex-grow: 5;
         z-index: 0;
-        /* border: 1px solid red; */
-        width: 60vw;
     }
-    .intro-text .containerContact{
-        max-width: 60vw;
+    .containerContact{
+        max-width: 60vw !important;
+        min-width: 50vw !important;
     }
 
   }

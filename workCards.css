@@ -1,7 +1,7 @@
 .fi{
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 .fib{
@@ -30,4 +30,13 @@
     height: 5px;
     background-image: linear-gradient(45deg, #d36efb, rgb(88, 90, 244));
     /* border: 10px; */
+}
+
+@media (max-width: 599px) {
+    .fib{
+        height: 10vw;
+        width: 10vw;
+        min-height: 120px;
+        min-width: 120px;
+    }
 }

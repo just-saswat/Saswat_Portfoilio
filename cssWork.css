@@ -26,6 +26,7 @@ body {
 
 .intro-text {
     flex: 1vw;
+    height: min-content;
     align-items: center;
     border: 1px solid rgba(255, 0, 0, 0);
     flex-grow: 0.9;
