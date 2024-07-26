@@ -1,0 +1,216 @@
+@media (max-width: 599px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden !important;
+    }
+    #nav1{
+        display: none;
+    }
+    .nav2{
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+    }
+    .intro-text{
+        /* align-self: center; */
+        position: static;
+        /* border: 2px solid green; */
+        align-self: start;
+        margin-left: -0vw;
+        margin-top: -5vh;
+        z-index: 0;
+    }
+    .blob{
+        width: 70vw;
+        position: static;
+        z-index: -1;
+        margin-left: -0% !important;
+    }
+    .intro-photo img{
+        position: static;
+        width: 60vw !important;
+        height: auto !important;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
+    }
+    .intro-text h1{
+        font-size: 7vw; 
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .intro-text {
+        flex: 1vw;
+        height: min-content;
+        width: fit-content;
+        align-self: center;
+        border: 1px solid rgba(255, 0, 0, 0);
+        flex-grow: 0.9;
+        margin-top: 5vw;
+        /* border: 1px solid chartreuse; */
+    }
+
+
+    /* Nav Bar Styles */
+    .nav-link{
+        padding-top: 12.5%;
+        padding-bottom: 12.5%;
+    }
+    .nav-link i{
+        margin-left: -80%;
+    }
+    .nav-link span {
+        opacity: 1;
+        color: #ffffff;
+        font-family: "Fugaz One", sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .nav-link:hover{
+        .fas,.fab{
+            transition: transform 0.3s;
+            color: #ffffff;
+        }
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-mobile .navbar-toggler {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .navbar-mobile .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .navbar-mobile .navbar-toggler-icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: transform 0.3s;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -80px;
+        width: 180px;
+        height: 100%;
+        background-color: #12141bf5;
+        z-index: 1;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+        left: 0%;
+        align-items: stretch;
+    }
+
+    .mobile-menu .nav-link {
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+
+    .mobile-menu .nav-link:hover {
+        background-color: #a24afb;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .intro{
+        flex-direction: column;
+        flex: 1;
+        /* border: 1px solid violet; */
+    }
+    .intro-text{
+        /* align-self: center; */
+        position: static;
+        /* border: 2px solid green; */
+        align-self: start;
+        margin-left: 10vw;
+        margin-top: -5vh;
+        z-index: 0;
+    }
+    .blob{
+        width: 70vw;
+        position: static;
+        z-index: -1;
+        margin-left: 7% !important;
+    }
+    .intro-photo img{
+        position: static;
+        width: 60vw;
+        margin-top: -50% !important;
+        margin-left: 15% !important;
+    }
+    .intro-text h1{
+        font-size: 7vw; 
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .intro-text {
+        flex: 1vw;
+        height: min-content;
+        width: fit-content;
+        align-self: center;
+        border: 1px solid rgba(255, 0, 0, 0);
+        flex-grow: 0.9;
+        margin-left: 10vw;
+        margin-top: 5vw;
+        /* border: 1px solid chartreuse; */
+    }
+
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .intro{
+        flex-direction: column;
+        flex: 1;
+    }
+    .intro-text h1{
+        font-size: 7vw; 
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .intro-text {
+        flex: 1vw;
+        height: min-content;
+        width: fit-content;
+        align-self: center;
+        border: 1px solid rgba(255, 0, 0, 0);
+        flex-grow: 0.9;
+        margin-left: 10vw;
+        margin-top: 5vw;
+        /* border: 1px solid chartreuse; */
+    }
+
+  }
