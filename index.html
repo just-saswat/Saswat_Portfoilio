@@ -12,8 +12,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsiveIndex.css">
+    <link rel="stylesheet" href="load.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-animation"></div>
+    </div>
+
     <!-- Desktop View NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark" id="nav1">
         <div class="navbar-nav flex-column">
@@ -151,9 +157,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script src="security.js"></script>
 
-    <!-- Button Function For Toggling NavBar -->
+    <!-- Button Function For Toggling NavBar & Loading Screen -->
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            const content = document.getElementById('content');
+
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+                content.style.display = 'block';
+            }, 1500);
+        });
         document.getElementById('navbar-toggler').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('show');
