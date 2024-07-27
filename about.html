@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="cssContact.css">
-    <link rel="stylesheet" href="responsiveContact.css">
-    <link rel="stylesheet" href="contactCard.css">  
+    <link rel="stylesheet" href="cssWork.css">
+    <link rel="stylesheet" href="responsiveWork.css">
+    <link rel="stylesheet" href="workCards.css">
 </head>
 <body>
     <!-- Desktop View NavBar -->
@@ -22,7 +22,7 @@
                 <i class="fas fa-home"></i>
                 <span class="nav-text" style="margin-left: 0%;">HOME</span>
             </a>
-            <a class="nav-link d-flex align-items-center" href="about.html">
+            <a class="nav-link d-flex align-items-center" href="#about">
                 <i class="fas fa-user"></i>
                 <span class="nav-text" style="margin-left: 0%;">ABOUT</span>
             </a>
@@ -30,7 +30,7 @@
                 <i class="fas fa-tools"></i>
                 <span class="nav-text" style="margin-left: 0%;">SKILLS</span>
             </a>
-            <a class="nav-link d-flex align-items-center" href="work.html">
+            <a class="nav-link d-flex align-items-center" href="#work">
                 <i class="fas fa-briefcase"></i>
                 <span class="nav-text" style="margin-left: 0%;">WORK</span>
             </a>
@@ -61,7 +61,7 @@
                 <i class="fas fa-home"></i>
                 <span class="nav-text" style="margin-left: -5%;">Home</span>
             </a>
-            <a class="nav-link" href="about.html">
+            <a class="nav-link" href="#about">
                 <i class="fas fa-user"></i>
                 <span class="nav-text" style="margin-left: -5%;">About</span>
             </a>
@@ -69,7 +69,7 @@
                 <i class="fas fa-tools"></i>
                 <span class="nav-text" style="margin-left: -5%;">Skills</span>
             </a>
-            <a class="nav-link" href="work.html">
+            <a class="nav-link" href="#work">
                 <i class="fas fa-briefcase"></i>
                 <span class="nav-text" style="margin-left: -5%;">Work</span>
             </a>
@@ -94,31 +94,19 @@
         <main>
             <section id="home" class="intro">
                 <div class="intro-text">
-                    <div class="containerContact">
-                        <h2 class="contactHeading">Get in Touch</h2>
-                        <form id="contactForm" method="post">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" style="color: white;">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" style="color: white;">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" name="number" id="phone" placeholder="Enter your phone number" style="color: white;">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">How Can I Help You?</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Describe your request" style="color: white;"></textarea>
-                            </div>
-                            <button type="submit" value="Submit" class="btn btn-custom btn-block" style="color: #fff;">Submit</button>
-                        </form>
-                    </div>         
+                    <h1>Work & Experience</h1>
+                    <hr class="line">
+                    <div class="fi">
+                        <div class="fib"></div>
+                        <div class="fib"></div>
+                        <div class="fib"></div>
+                        <div class="fib"></div>
+                        <div class="fib"></div>
+                        <div class="fib"></div>
+                    </div>
                 </div>
                 <div class="intro-photo">
-                    <div class="blob">
+                    <div class="blob" style="margin-left: -7%;">
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                             <defs>
                                 <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -140,44 +128,10 @@
                             </path>
                         </svg>
                     </div>
-                    <img src="contact-us-animate.svg" style="height: 500px; margin-left: 5%; margin-top: 10%;">
+                    <img src="work2.svg" style="height: 500px; margin-left: -5%; margin-top: 10%;">
                 </div>
             </section>
         </main>
-    </div>
-
-    <!-- Loading Modal -->
-    <div class="modal fade modal-loading" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center" style="margin-top: 10%;">
-                    <div class="spinner-border spinner-border-custom" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                    <p class="loading-text">Sending your request...<br>Have Patience</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Thank You Modal -->
-    <div class="modal fade modal-custom" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel" style="color: #d36efb    ; text-align: left;"><b>Thank You!</b></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    I Have Received your Request and I will contact you soon via Whatsapp.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-custom" data-dismiss="modal" style="color: #fff; text-shadow: 3px 3px 7px black;">Close</button>
-                </div>
-            </div>
-        </div>
     </div>
 
 
@@ -190,42 +144,7 @@
             this.querySelector('.navbar-toggler-icon').classList.toggle('fa-times');
         });
     </script>
-
-    <!-- Submit Button Function -->
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            var formData = new FormData(this);
-
-            // Show the loading modal
-            $('#loadingModal').modal('show');
-
-            fetch('https://script.google.com/macros/s/AKfycbxLPlwAZrel3csJgvmbiDruSOJpXS-4GLXfAghi2FsxKa78ltcxiqYaUTFD5z1vqvKUWg/exec', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Hide the loading modal
-                $('#loadingModal').modal('hide');
-
-                if (data.result === 'success') {
-                    $('#contactModal').modal('show');
-                    // Optionally, you can reset the form fields
-                    event.target.reset();
-                } else {
-                    console.error('Error:', data.error);
-                }
-            })
-            .catch(error => {
-                // Hide the loading modal in case of error
-                $('#loadingModal').modal('hide');
-                console.error('Error:', error);
-            });
-        });
-    </script>
-
+    
     <!-- Script For Disabling to view the Source Code -->
     <script>
         // Disable right-click

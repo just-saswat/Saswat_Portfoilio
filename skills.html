@@ -22,7 +22,7 @@
                 <i class="fas fa-home"></i>
                 <span class="nav-text" style="margin-left: 0%;">HOME</span>
             </a>
-            <a class="nav-link d-flex align-items-center" href="#about">
+            <a class="nav-link d-flex align-items-center" href="about.html">
                 <i class="fas fa-user"></i>
                 <span class="nav-text" style="margin-left: 0%;">ABOUT</span>
             </a>
@@ -61,7 +61,7 @@
                 <i class="fas fa-home"></i>
                 <span class="nav-text" style="margin-left: -5%;">Home</span>
             </a>
-            <a class="nav-link" href="#about">
+            <a class="nav-link" href="about.html">
                 <i class="fas fa-user"></i>
                 <span class="nav-text" style="margin-left: -5%;">About</span>
             </a>
@@ -137,41 +137,6 @@
             mobileMenu.classList.toggle('show');
             this.querySelector('.navbar-toggler-icon').classList.toggle('fa-bars');
             this.querySelector('.navbar-toggler-icon').classList.toggle('fa-times');
-        });
-    </script>
-
-    <!-- Submit Button Function -->
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            var formData = new FormData(this);
-
-            // Show the loading modal
-            $('#loadingModal').modal('show');
-
-            fetch('https://script.google.com/macros/s/AKfycbxLPlwAZrel3csJgvmbiDruSOJpXS-4GLXfAghi2FsxKa78ltcxiqYaUTFD5z1vqvKUWg/exec', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Hide the loading modal
-                $('#loadingModal').modal('hide');
-
-                if (data.result === 'success') {
-                    $('#contactModal').modal('show');
-                    // Optionally, you can reset the form fields
-                    event.target.reset();
-                } else {
-                    console.error('Error:', data.error);
-                }
-            })
-            .catch(error => {
-                // Hide the loading modal in case of error
-                $('#loadingModal').modal('hide');
-                console.error('Error:', error);
-            });
         });
     </script>
 
