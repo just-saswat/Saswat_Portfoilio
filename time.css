@@ -88,7 +88,7 @@ header h1{
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #a200f3;
+  background: #9937fb;
   z-index: 5;
   left: 0;
   right: 0;
@@ -99,7 +99,7 @@ header h1{
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid #a200f3;
+  border-bottom: 4px solid #9937fb;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -108,7 +108,7 @@ header h1{
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #a200f3;
+  border-top: 4px solid #9937fb;
   bottom: -4px;
 }
 
@@ -181,7 +181,7 @@ header h1{
 }
 
 .time {
-  background: #a200f3;
+  background: # ;
   display: inline-block;
   padding: 8px;
 }
@@ -191,7 +191,7 @@ header h1{
   margin: 1em 0 0 0;
   padding: 1em;
   color: #f0f0f0;
-  border: 2px solid #a200f3;
+  border: 2px solid #9937fb;
   border-radius: 0.5rem 0.5rem;
   background: rgb(11, 8, 18);
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
